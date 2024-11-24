@@ -20,7 +20,7 @@ source venv/bin/activate
 
 3. Installez les dépendances Python requises :
 ```bash
-pip install flask spacy
+pip install flask spacy pytest
 ```
 
 4. Téléchargez le modèle de langue anglaise pour spaCy :
@@ -51,6 +51,20 @@ python app.py
 Pour désactiver l'environnement virtuel quand vous avez terminé :
 ```bash
 deactivate
+```
+
+## Tests
+
+Pour lancer les tests :
+
+1. Assurez-vous que l'environnement virtuel est activé :
+```bash
+source venv/bin/activate
+```
+
+2. Lancez les tests avec pytest :
+```bash
+pytest test/
 ```
 
 ## Utilisation
