@@ -18,9 +18,9 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-3. Installez les dépendances Python requises :
+3. Installez le projet et ses dépendances :
 ```bash
-pip install flask spacy pytest
+pip install -e .
 ```
 
 4. Téléchargez le modèle de langue anglaise pour spaCy :
@@ -64,8 +64,10 @@ source venv/bin/activate
 
 2. Lancez les tests avec pytest :
 ```bash
-pytest test/
+PYTHONPATH=. pytest test/
 ```
+
+Note : Les tests end-to-end (e2e) nécessitent un navigateur web et Selenium WebDriver.
 
 ## Utilisation
 
